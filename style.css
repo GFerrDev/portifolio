@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 28%, rgba(76,148,47,1) 65%, rgba(50,156,33,1) 100%, rgba(91,171,33,1) 100%);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+header{
+    height: 40px;
+    padding: 15px;
+}
+
+p span{
+    font-weight: 100;
+}
+
+#logo {
+    max-width: 50px;
+    float: inline-end;
+}
+
+#gf {
+    float: inline-end;
+}
+
+h1 {
+    animation: blink 2s infinite alternate ease;
+    text-transform: uppercase;
+    text-shadow:
+        0 0 5px #008006,
+        0 0 10px #008006,
+        0 0 15px #008006,
+        0 0 20px #008006,
+        0 0 30px #008006,
+        0 0 40px #008006,
+        0 0 55px #008006,
+        0 0 75px #008006;
+        margin-bottom: 100px;
+}
+
+.landpage {
+    display: flex;
+    margin: 50px;
+}
+
+main .textconteiner {
+    margin-top: 10vh;
+    margin-left: 50px;
+}
+
+#me {
+    width: 600px;
+    border-radius: 50%;
+
+}
+
+h2 {
+    margin: 50px;
+    text-align: center;
+}
+
+.mcards {
+    display: flex;
+    text-align: center;
+}
+
+.mcards .card {
+    display: block;
+    width: 23%;
+    margin: 1%;
+}
+
+.dcards {
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dcards .card {
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.card p {
+    background: #00000065;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.card svg {
+    margin-top: 10px;
+}
+
+.card{
+    background: #ffffff1a;
+    border-radius: 40px;
+
+}
+
+
+footer {
+    width: 98%;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #00000065;
+    border-radius: 40px;  
+    margin-top: 50px;  
+    justify-content: space-between;
+}
+
+footer svg{
+    transform: scale(1.9);
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.svg{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.span{
+    padding: 15px;
+    padding-top: 0;
+    margin-right: 40px;
+}
+
+
+
+@keyframes blink {
+    from{
+         opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .landpage {
+        margin-top: 80px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .landpage {
+        margin-left: 0;
+        margin: 0;
+        flex-direction: column;
+
+    }
+
+    #me {
+        height: 400px;
+        width: 300px;
+    }
+
+    .textconteiner {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+        transform: translateX(-25px);
+        text-align: center;
+        padding: 10px;
+        background: #00ff4c3f;
+        border-radius: 20px;
+    }
+
+    .mcards .card {
+        display: block;
+        width: 90%;
+        margin: 10%;
+    }
+
+    .dcards .card {
+        width: 90%;
+        margin: 10%;
+        text-align: center;
+        
+    }
+
+    .mcards, .dcards {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0;
+    }
+
+    svg{
+        margin: 0;
+    }
+
+    .svg{
+        margin: 0;
+        width:100%;
+        justify-content: space-around;
+    }
+
+    .span{
+        margin: 0;
+    }
+
+    footer{
+        width: 90%;
+        margin: 5%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+}

@@ -103,12 +103,12 @@ h3{
     margin-left: -40px;
 }
 
-span{
+.skils span{
     color: #00000000;
     background: #00000000;
 }
 
-.span:hover span {
+.skils .span:hover span {
     color: #fff;
     background: #008006;
     border-radius: 5px;
@@ -126,12 +126,13 @@ span{
 .sSkils p{
     text-align: center;
     text-transform: uppercase;
-    padding: 40%;
+    padding: 20%;
     
 }
 
 .error{
     background:url(https://i.pinimg.com/originals/21/7d/a2/217da299cc918fad9b76eb99e4bb75b3.gif);
+    border-radius: 50px;
 }
 
 
@@ -302,5 +303,4 @@ footer svg{
         flex-wrap: wrap;
         text-align: center;
     }
-
 }

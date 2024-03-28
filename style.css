@@ -64,6 +64,77 @@ h2 {
     text-align: center;
 }
 
+h3{
+    text-align: center;
+}
+
+.hSkils{
+    width: 90%;
+    margin: 5%;
+    padding: 100px 0;
+    border-radius: 50px;    
+    background: #ffffff1a;
+}
+
+.sSvg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#subtitle{
+    color: #fff;
+    background: #008006;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: -80px;
+}
+
+#css{
+    margin-left: -40px;
+}
+
+span{
+    color: #00000000;
+    background: #00000000;
+}
+
+.span:hover span {
+    color: #fff;
+    background: #008006;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sSkils{
+    width: 90%;
+    margin: 5%;
+    border-radius: 50px;    
+    background: #ffffff1a;
+}
+
+.sSkils p{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40%;
+    
+}
+
+.error{
+    background:url(https://i.pinimg.com/originals/21/7d/a2/217da299cc918fad9b76eb99e4bb75b3.gif);
+}
+
+
 .mcards {
     display: flex;
     text-align: center;
@@ -90,7 +161,7 @@ h2 {
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 .card p {
@@ -106,9 +177,7 @@ h2 {
 .card{
     background: #ffffff1a;
     border-radius: 40px;
-
 }
-
 
 footer {
     width: 98%;
@@ -184,6 +253,14 @@ footer svg{
         padding: 10px;
         background: #00ff4c3f;
         border-radius: 20px;
+    }
+
+    #subtitle{
+        margin-left: 0px;
+    }
+    
+    #css{
+        margin-left: 10px;
     }
 
     .mcards .card {

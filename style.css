@@ -68,65 +68,68 @@ h3{
     text-align: center;
 }
 
+
 .hSkils{
     width: 90%;
     margin: 5%;
-    padding: 100px 0;
+    margin-bottom: 15%;
     border-radius: 50px;    
     background: #ffffff1a;
+    padding-bottom: 5%;
 }
 
-.sSvg{
+.hSkils .cards-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.span{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.hSkils .card{
+    width: 150px;
+    background: #00000000;
+    text-align: center;
+    display: block;
 }
 
-#subtitle{
-    color: #fff;
-    background: #008006;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-    margin-left: -80px;
+#shs{
+    margin-left: -30px;
 }
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 #css{
     margin-left: -40px;
 }
 
-.skils span{
-    color: #00000000;
-    background: #00000000;
-}
-
-.skils .span:hover span {
-    color: #fff;
-    background: #008006;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-}
-
 .sSkils{
     width: 90%;
     margin: 5%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     border-radius: 50px;    
     background: #ffffff1a;
 }
 
+.skils h3{ 
+    padding-top: 5%;
+}
+
 .sSkils p{
     text-align: center;
-    text-transform: uppercase;
-    padding: 20%;
+    padding: 5%;
+    padding-top: 0;
     
 }
 

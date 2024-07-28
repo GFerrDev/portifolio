@@ -51,10 +51,11 @@ h1 {
 main .textconteiner {
     margin-top: 10vh;
     margin-left: 50px;
+    font-size: 20px;
 }
 
 #me {
-    width: 600px;
+    width: 35vw;
     border-radius: 50%;
 
 }
@@ -62,10 +63,12 @@ main .textconteiner {
 h2 {
     margin: 50px;
     text-align: center;
+    font-size: 30px;
 }
 
 h3{
     text-align: center;
+    font-size: 30px;
 }
 
 

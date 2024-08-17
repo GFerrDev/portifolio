@@ -3,12 +3,67 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 28%, rgba(76,148,47,1) 65%, rgba(50,156,33,1) 100%, rgba(91,171,33,1) 100%);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 28%, rgba(76,148,47,1) 65%, rgba(50,156,33,1) 100%, #5bab21 100%);
     color: #fff;
     font-family: sans-serif;
     font-weight: 900;
 }
+
+.ligthMode{
+    background: rgb(244,244,244);
+    background: linear-gradient(197deg, rgba(244,244,244,1) 2%, rgba(202,255,157,1) 10%, rgba(177,230,130,1) 24%, rgba(150,204,103,1) 38%, rgba(117,172,69,1) 54%, rgba(91,171,33,1) 80%);
+    color: #000;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 2.4em;
+    height: 1.4em;
+    margin-top: 8px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url();
+    background-color: #00ff44;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.switch input:checked+.slider {
+    background-color: #000;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(1em);
+}
+
 
 header{
     height: 40px;
@@ -29,6 +84,8 @@ p span{
 }
 
 h1 {
+    text-align: center;
+    color: #fff;
     animation: blink 2s infinite alternate ease;
     text-transform: uppercase;
     text-shadow:
@@ -41,6 +98,20 @@ h1 {
         0 0 55px #008006,
         0 0 75px #008006;
         margin-bottom: 100px;
+}
+
+.ligthMode h1{
+    text-shadow:
+    0 0 5px #045a08,
+    0 0 10px #045a08,
+    0 0 15px #045a08,
+    0 0 15px #045a08,
+    0 0 15px #045a08,
+    0 0 20px #045a08,
+    0 0 30px #045a08,
+    0 0 40px #045a08,
+    0 0 55px #045a08,
+    0 0 75px #045a08;
 }
 
 .landpage {
@@ -217,7 +288,10 @@ footer svg{
     margin-right: 40px;
 }
 
-
+.ligthMode .sSkils, .ligthMode .hSkils, .ligthMode .card p, .ligthMode footer,.ligthMode footer svg{
+    background: #ffffffe0;
+    color: #000;
+}
 
 @keyframes blink {
     from{

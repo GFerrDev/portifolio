@@ -12,6 +12,12 @@
 <body>
 
     <header>
+        <div class="btn_div">
+            <label class="switch btn-exp">
+                <input type="checkbox" id="toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
         <img src="icongfd.png" id="logo">
         <span id="gf">GFerrDev</span>
     </header>
@@ -39,7 +45,14 @@
 
             <div class="sSkils">
                 <h3>Sobre mim</h3>
-               <p>Pra me apresentar pra vocês, vou contar uma história que aconteceu comigo. Uma vez, eu estava atendendo um cliente e ele se assustou. Na mesma hora, olhei na mesma direção que ele. Fora da loja, no corredor, um senhor tinha acidentalmente posto fogo em uma sacola de produtos de uma tabacaria que tem ali perto e estava no chão ajoelhado assoprando o fogo tentando apagar. Eu, vendo aquela cena, não pensei duas vezes e saí atrás de um extintor de incêndio. Mais tarde, meu chefe disse que eu era louco por me arriscar, que ele nunca arriscaria ter uma lata de fluido de isqueiro explodindo na cara dele. Não estou dizendo pra vocês que sou o Batman; relaxem. Estou falando sobre a pessoa que sou: atento, empático, proativo. Como se diz no bom português, pau para toda obra.</p>
+                <p>Pra me apresentar pra vocês, vou contar uma história que aconteceu comigo. Uma vez, eu estava
+                    atendendo um cliente e ele se assustou. Na mesma hora, olhei na mesma direção que ele. Fora da loja,
+                    no corredor, um senhor tinha acidentalmente posto fogo em uma sacola de produtos de uma tabacaria
+                    que tem ali perto e estava no chão ajoelhado assoprando o fogo tentando apagar. Eu, vendo aquela
+                    cena, não pensei duas vezes e saí atrás de um extintor de incêndio. Mais tarde, meu chefe disse que
+                    eu era louco por me arriscar, que ele nunca arriscaria ter uma lata de fluido de isqueiro explodindo
+                    na cara dele. Não estou dizendo pra vocês que sou o Batman; relaxem. Estou falando sobre a pessoa
+                    que sou: atento, empático, proativo. Como se diz no bom português, pau para toda obra.</p>
 
             </div>
 
@@ -209,6 +222,20 @@
         function ext() {
             alert("Você esta sendo redrecionado")
         }
+
+        // const rotate = document.getElementById('rotate');
+        // 
+
+        // function landScape() {
+        //     
+        // };
+        const toggleBtn = document.getElementById('toggle');
+        const body = document.body;
+
+        toggleBtn?.addEventListener('click', function () {
+            body.classList.toggle('ligthMode');
+        });
+        
     </script>
 
 </body>
